@@ -510,12 +510,7 @@ input:checked + .slider:before {
 }
 
 .col.juuuu {
-  height: 60vh;
-  overflow-y: scroll;
-}
-
-#lexiconMain {
-  height: 60vh;
+  height: 100%;
   overflow-y: scroll;
 }
 
@@ -550,9 +545,14 @@ input:checked + .slider:before {
   background: rgba(255,255,255,0.08);
 }
 
-#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(2),#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(3),#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(4) {
+#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(2),#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(3) {
   background: rgba(12, 12, 12, 0.678);
 }
+
+#lexiconMain > .lexiconRow div:nth-of-type(2) {
+  padding-left: 50px;
+}
+
 
 #Music{
   background-image:url('../img/002_002.png');
@@ -586,6 +586,7 @@ input:checked + .slider:before {
   background: url('../img/hands_large.jpg');
   background-size: 100vw auto;
   background-position: 0vw 0vh;
+
 }
 
 #musicBanner{
@@ -600,4 +601,24 @@ input:checked + .slider:before {
 #musicBanner p{
   font-size: 1rem;
   color: #d7d7d7;
+}
+
+.mediaButton:hover{
+  cursor: pointer;
+}
+
+#lexiconMain{
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+
+
+@media (max-width: 576px){
+  .navbar-nav{
+    background: #000000c0;
+  }
+  .navbar.navbar-light.navbar-expand-md{
+    background-color: rgba(0,0,0,0.41);
+  }
 }

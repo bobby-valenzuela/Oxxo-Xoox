@@ -7,7 +7,7 @@
     <title>Öxxö Xööx || Official Website</title>
     <meta name="twitter:card" content="summary">
     <meta name="description" content="Öxxö Xööx is an artistic and personal project in the form of an audiovisual diary. It is the artist name of Laurent Lunoir. The contours of the project took shape in his mind in 2004, driven by a desire for global and therapeutic art. The concepts of love and sacredness are at the heart of his approach.">
-    <meta property="og:image" content="assets/img/logo_small.jpg">
+    <meta property="og:image" content="assets/img/logo_small.png">
 
     <!-- Responsive frameworks, Icon sets, and animation libraries and-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -30,21 +30,21 @@
 <body style="background-color:rgb(0,0,0);">
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container-fluid"><a class="navbar-brand pb-0" href="#">
-            <img id="navimg" src="assets/img/loo_001.jpg" alt="Öxxö Xööx logo" ></a>
+            <img id="navimg" src="assets/img/logo_small.png" alt="Öxxö Xööx logo" ></a>
             <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="navbar-toggler-icon" ></span>
             </button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav" id="navlist">
-                    <li class="nav-item" role="presentation"><a class="nav-link active secondaryFont" href="#Home">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active secondaryFont" href="#Music">Music</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link secondaryFont" href="#team">Members</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link secondaryFont" href="#bio">Bio</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link secondaryFont" href="#store">Store</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link secondaryFont" href="#Mediasection">Media</a></li>
-
+                <ul class="nav navbar-nav pb-5" id="navlist">
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link active secondaryFont" href="#Home">Home</a></li>
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link active secondaryFont" href="#Music">Music</a></li>
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link secondaryFont" href="#team">Members</a></li>
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link secondaryFont" href="#bio">Bio</a></li>
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link secondaryFont" href="#store">Store</a></li>
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link secondaryFont" href="#Mediasection">Media</a></li>
+                    <li class="nav-item text-center" role="presentation"><a class="nav-link secondaryFont" href="#lexiconContainer">Lexicon</a></li>
                 </ul>
         </div>
     </div>
@@ -70,14 +70,14 @@
             <div class=" col-xs-0 col-md-3"></div>
             <div class="col col-xs-12 col-lg-6 align-self-center">
                 <p  class="thirdFont"><br>Each album is part of an alchemical process, seeking to come closer with each step to the Light. Sincere, honest, wild and intuitive, the approach is sometimes deliberately ingenuous in the purpose of finding the intuitive logic of childhood
-                    which is lacking in the rigid outlooks and imaginations of adults. <br>The albums also function in pairs, with “Rëvëürt” and “Nämïdäë” encompassing and closing the first pair, and “Ÿ” now opening a new duology.<br></p>
+                    - which is lacking in a rigid perspective and the imaginations of adults. The albums also function in pairs, with “Rëvëürt” and “Nämïdäë” encompassing and closing the first pair, and “Ÿ” now opening a new duology.<br></p>
             </div>
             <div class=" col-xs-0 col-md-3"></div>
 
         </div>
     </section>
     <div id="Music" class="pt-5" >
-        <div class="container-fluid MusicMain" id="musicContent">
+        <div class="container-fluid MusicMain pt-5" id="musicContent">
             <div class="row">
                 <div class="col d-flex justify-content-center musicHeaderDiv">
                     <h2 class="headingShadow  section-heading">Music</h2>
@@ -280,8 +280,8 @@
         </div>
         <div class="row MediaButtons d-none d-lg-flex"><div class=" d-xs-none d-md-flex col-md-3"></div>
             <div class="col col-md-6 text-center">
-                <p class="d-sm-inline-block MediaMediaButton thirdFont mr-5" v-on:click="MediaSection=0">Images</p>
-                <p class="d-sm-inline-block MediaMediaButton thirdFont ml-5" v-on:click="MediaSection=1">Video</p>
+                <p class="d-sm-inline-block mediaButton thirdFont mr-5" v-on:click="MediaSection=0">Images</p>
+                <p class="d-sm-inline-block mediaButton thirdFont ml-5" v-on:click="MediaSection=1">Video</p>
             </div><div class=" d-xs-none d-md-flex col-md-3"></div></div>
         <div id="Media" v-show="MediaSection==0">
             <div class="shadow-none accordian" id="accordianSlide">
@@ -326,7 +326,7 @@
     <section id="lexiconContainer" class="pb-5">
 
 
-        <div id="lexiconMain" class="container-fluid pt-5">
+        <div class="container-fluid pt-5">
             <div class="row justify-content-center py-5">
                 <div >
                     <h2 class="section-heading primaryFont">Lexicon</h2>
@@ -339,17 +339,24 @@
                 </div>
                 <div class="col-0 col-md-2"></div>
             </div>
-            <div class="row lexiconRow text-left " v-for="(lexicon, i) in lexiconWords[currentLetter]">
-                <div class="col-0 col-lg-2"></div>
-                <div class=" lexiconWordContainer col-4 col-lg-2">
-                    <p class="secondaryFont">{{lexiconWords[currentLetter][i].word}}</p>
-                </div>
-                <div class=" lexiconWordContainer col-8 col-lg-6">
-                    <p class="thirdFont">{{lexiconWords[currentLetter][i].definition}}</p>
-                </div>
-                <div class="col-0 col-lg-2"></div>
-            </div>
         </div>
+
+            <div  id="lexiconMain"  class="container-fluid">
+
+                <div class="row lexiconRow text-left " v-for="(lexicon, i) in lexiconWords[currentLetter]">
+                    <div class="col-0 col-lg-2"></div>
+                    <div class=" lexiconWordContainer col-4 col-lg-2">
+                        <p class="secondaryFont">{{lexiconWords[currentLetter][i].word}}</p>
+                    </div>
+                    <div class=" lexiconWordContainer col-8 col-lg-6">
+                        <p class="thirdFont">{{lexiconWords[currentLetter][i].definition}}</p>
+                    </div>
+                    <div class="col-0 col-lg-2"></div>
+                </div>
+
+            </div>
+
+
 
 
     </section>
@@ -371,11 +378,13 @@
                         <ul>
                             <li><a href="#Music" class="thirdFont">Music</a></li>
                             <li><a href="#bio" class="thirdFont">Bio</a></li>
-                            <li><a href="#Mediasection" class="thirdFont">Art</a></li>
+                            <li><a href="#Mediasection" class="thirdFont">Media</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 item text">
-                        <p><br></p>
+                    <div class="col-md-6 item text text-center">
+                        <p class="thirdFont pt-1 text-left">
+                            This project is like a battle, a rage which aims to free the imprisoned life, inside of the embodied being. It is spiritual music that wants to elevate the soul to the original light, in a unique way, wild and free. 
+                        </p>
                     </div>
                     <div class="col item social"><a href="https://www.facebook.com/pg/OxxoXoox69"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/oxxoxoox?lang=en"><i class="icon ion-social-twitter"></i></a><a class="bclink" href="https://oxxo-xoox.bandcamp.com/"
                             target="blank"><i class="fab fa-bandcamp"></i></a><a href="https://www.instagram.com/oxxoxoox999/"><i class="icon ion-social-instagram"></i></a></div>

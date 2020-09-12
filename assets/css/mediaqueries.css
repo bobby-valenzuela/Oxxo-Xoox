@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 576px) {
-  .d-sm-inline-block.MediaMediaButton {
+  .d-sm-inline-block.mediaButton {
     margin: 0 40px;
   }
 }

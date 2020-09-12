@@ -1,0 +1,77 @@
+@media (max-width: 576px) {
+  #Music {
+    background-size: auto 100%;
+    background-position: 76% 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  #team .section-subheading.text-muted.thirdFont {
+    margin-bottom: 0;
+  }
+}
+
+#bio .photo-details {
+  padding-bottom: 0px;
+}
+
+.photo-card.float-left {
+  margin-right: 80px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+  #bio {
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-sm-inline-block.MediaMediaButton {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #mediaMain {
+    background-position-y: -5vw;
+    background-size: 85vw;
+  }
+}
+
+/* ================ Mobile first =====================*/
+
+@media (min-width: 767px) and (min-height:500px) {
+  #Music{background-size: auto 126vh  ;}
+}
+
+@media (min-width: 991px) and (min-height:500px) {
+  #Music{background-size: 100w auto  ;} 
+}
+
+/* ========================================== */
+
+
+@media (min-width: 576px){
+
+
+@media (min-width: 767px){
+  #langToggle{
+    position: relative;
+      left: -42vw;
+      top: 20px;
+  }
+  #musicBanner p{
+    font-size: 1.5rem;
+  }
+}
+
+}

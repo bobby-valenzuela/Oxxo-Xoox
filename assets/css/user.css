@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alegreya+SC&family=Cormorant+Unicase&display=swap');
+
+:root {
+  --pri-font: 'Cormorant Unicase', serif;
+  --sec-font: 'Alegreya SC', serif;
+  --thir-font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(204,204,204,0.54);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353535;
+  border-radius: 0px;
+}
+
+.primaryFont {
+  font-family: var(--pri-font);
+}
+
+.secondaryFont {
+  font-family: var(--sec-font);
+}
+
+.thirdFont {
+  font-family: var(--thir-font);
+}
+
+/* =========== Content ================== */
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  margin: 50px 0 20px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+header h1 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0 30px;
+}
+
+.content figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.content figcaption {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.content div.dropdown {
+  margin: 20px auto;
+  width: 100px;
+}
+
+.content blockquote p {
+  font-size: 14px;
+}
+
+#disco img:hover {
+  cursor: pointer;
+}
+
+#disco img {
+  box-shadow: 0 0 7px 0px black;
+}
+
+#navbar .nav-link a {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.nav-link a {
+  color: rgba(256, 256, 256, 0.8);
+}
+
+#navlist a {
+  color: rgba(255, 255, 255, 0.77);
+  text-shadow: 0 0 1px black, 0 0 5px black;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.41);
+  padding-bottom: 0;
+  padding-top: 0;
+  box-shadow: 0 0 10px 0px black;
+  transform: translate(0,-50px);
+  animation: slideIn 3s ease-out forwards;
+  animation-delay: 3s;
+  -webkit-animation: slideIn 3s ease-out forwards;
+  -webkit-animation-delay: 3s;
+  -moz-animation: slideIn 3s ease-out forwards;
+  -moz-animation-delay: 3s;
+  -ms-animation: slideIn 3s ease-out forwards;
+  -ms-animation-delay: 3s;
+  -o-animation: slideIn 3s ease-out forwards;
+  -o-animation-delay: 3s;
+}
+
+@keyframes slideIn{
+  from{transform: translate(0px,-50px);}
+  to{transform: translate(0,0);}
+}
+@-webkit-keyframes slideIn{
+  from{-webkit-transform: translate(0px,-50px);}
+  to{-webkit-transform: translate(0,0);}
+}
+@-moz-keyframes slideIn{
+  from{-moz-transform: translate(0px,-50px);}
+  to{-moz-transform: translate(0,0);}
+}
+@-o-keyframes slideIn{
+  from{-o-transform: translate(0px,-50px);}
+  to{-o-transform: translate(0,0);}
+}
+@-o-keyframes slideIn{
+  from{-ms-transform: translate(0px,-50px);}
+  to{-ms-transform: translate(0,0);}
+}
+#navimg {
+  max-width: 42px;
+  height: auto;
+  padding-bottom: 0;
+}
+
+
+.navbar-light .navbar-brand {
+  margin-right: 0;
+}
+
+#SocialMediaBar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px 30px;
+  transform: translate(0, 50px);
+  -webkit-transform: translate(0, 50px);
+  -moz-transform: translate(0, 50px);
+  -o-transform: translate(0, 50px);
+  -ms-transform: translate(0, 50px);
+  animation: slideUp 3s reverse ease-in-out forwards;
+  -webkit-animation: slideUp 3s  ease-in-out forwards;
+  -moz-animation: slideUp 3s  ease-in-out forwards;
+  -o-animation: slideUp 3s  ease-in-out forwards;
+  -ms-animation: slideUp 3s  ease-in-out forwards;
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+}
+
+@keyframes slideUp{
+  from{transform: translate(0, 50px);}
+  to{transform: translate(0, 0px);}
+}
+
+
+#SocialMediaBar div a {
+  color: rgba(255, 255, 255, 0.49);
+  padding: 0 20px;
+  font-size: 1.5em;
+}
+
+#SocialMediaBar .fblink:hover {
+  color: #3b5998;
+}
+
+#SocialMediaBar .bclink:hover {
+  color: #629aa9;
+}
+
+#SocialMediaBar .twlink:hover {
+  color: #00acee;
+}
+
+#SocialMediaBar .ytlink:hover {
+  color: #c4302b;
+}
+
+#SocialMediaBar .iglink:hover {
+  color: #3f729b;
+}
+
+#Home h1 {
+  text-shadow: 0px 0px 3px white, 0px 0px 5px black;
+}
+
+#featuredRelease {
+  box-shadow: 0 0 20px 2px black;
+}
+
+.headingShadow {
+  text-shadow: 0px 0px 10px black;
+}
+
+#team h2 {
+  font-family: var(--pri-font);
+}
+
+#team .h4, h4:first-of-type {
+  color: white;
+  text-shadow: 0 0 3px #ffffff;
+  font-family: var(--pri-font);
+}
+
+#team .h4, h4:nth-of-type(2) {
+  font-family: var(--sec-font);
+}
+
+.list-inline.social-buttons {
+  display: inline-flex;
+}
+
+.social-buttons li {
+  margin: 30px 10px;
+}
+
+
+#accordianSlide img {
+  width: 900px;
+}
+
+#Media {
+  display: flex;
+  justify-content: center;
+}
+
+#accordianSlide {
+  width: 75%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+#MediaMain {
+  background-color: #000000;
+  padding-bottom: 20vh;
+  background-image: url("../../assets/img/ezgif.com-video-to-gif.gif");
+  /* ==== Two background images alternative ====
+  background-image: url("../../assets/img/ox-ox.gif"), url("../../assets/img/ezgif.com-video-to-gif.gif");
+  */
+  background-repeat: no-repeat;
+  background-size: auto 50vw;
+  background-position: center left;
+  background-position-x: -25vw, 42vw;
+  background-position-y: 16vw;
+}
+
+#bio .container {
+  height: 100%;
+}
+
+#Mediasection {
+  font-family: var(--pri-font);
+  padding-top: 80px;
+  text-align: center;
+  color: rgb(197,197,197);
+  font-size: 40px;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
+#bio {
+  background-color: #121212;
+  padding-bottom: 100px !important;
+  position: relative;
+}
+
+.photo-details.bioContainer {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#bio p {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.1rem;
+  color: rgb(186,186,186);
+}
+
+#bio .bioSection2 {
+  font-size: 1.3rem;
+  color: rgb(235,235,235);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-shadow: 0 0 1px black;
+  margin-bottom: 120px;
+}
+
+#bioHeading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: rgba(255,255,255,0.88);
+  font-family: var(--pri-font);
+  text-align: center;
+}
+
+
+@media (min-width: 300px) {
+  #socialBarContainer {
+    width: 100vw;
+  }
+}
+
+#albumText p, #albumText {
+  color: rgb(28,28,28);
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 0 1px rgb(0,0,0);
+  font-family: var(--thir-font);
+}
+
+
+
+@media (max-width: 575px) {
+  .bioContainer {
+    padding: 0!important;
+  }
+}
+
+@media (max-width: 575px) {
+  .photo-card.float-right.m-5 {
+    margin: 0!important;
+  }
+}
+
+#albumTitle {
+  font-size: 2.3rem;
+  color: rgb(40,40,40);
+  font-weight: 800;
+  border-bottom: 1px solid black;
+}
+
+.img-fluid {
+  max-width: 80%;
+  height: auto;
+}
+
+
+.navbar-light .navbar-toggler {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#albumText {
+  overflow-y: scroll;
+  max-height: 200px;
+  height: 200px;
+  background: #ffffff26;
+}
+
+@media (max-width: 576px) {
+  #musicIntro {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #musicContent {
+    padding: 5px 0px;
+  }
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#langToggle p:hover {
+  cursor: pointer;
+  text-shadow: 0 0 1px rgba(255,255,255,0.6), 0 0 3px rgba(255,255,255,0.69);
+}
+
+#langToggle p:last-of-type {
+  margin-left: 10px;
+}
+
+#langToggle p {
+  display: inline-block;
+}
+
+
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+@media (max-width: 576px) {
+  #accordianSlide {
+    height: 40vh;
+  }
+}
+
+.row.MediaButtons.mb-5 {
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+.row.MediaButtons {
+  overflow-x: hidden;
+  background-color: rgba(0,0,0,0.75);
+  padding-bottom: 15px;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.d-inline-block.alphaLetters {
+  font-family: var(--pri-font);
+  font-size: 1.6rem;
+  margin: 0 3px;
+}
+
+.col.alphaLettersContainer {
+  border-bottom: 1px solid white;
+  display: inline-block;
+  margin: 15px 0px 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.col.juuuu {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+#lexiconMain {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.lexiconWordContainer p:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.lexiconWordContainer .text-center.secondaryFont {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  /*text-decoration: underline;*/
+  letter-spacing: 0.15rem;
+}
+
+#lexiconMain .row:first-of-type {
+  margin: 3px auto;
+}
+
+#lexiconMain .row:first-of-type {
+  /*position: absolute;*/
+  /*top: 0;*/
+  width: 100%;
+}
+
+.d-inline-block.alphaLetters:hover {
+  cursor: pointer;
+  text-shadow: 0 0 5px rgba(255,255,255,0.3);
+  text-decoration: line-through;
+}
+
+#lexiconMain > .lexiconRow > div:nth-of-type(2), #lexiconMain > .lexiconRow > div:nth-of-type(3) {
+  background: rgba(255,255,255,0.08);
+}
+
+#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(2),#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(3),#lexiconMain > .lexiconRow:nth-of-type(odd) div:nth-of-type(4) {
+  background: rgba(12, 12, 12, 0.678);
+}
+
+#Music{
+  background-image:url('../img/002_002.png');
+}
+
+#Music h1{
+  font-size: 3rem;
+  color: #212529;
+}
+
+#musicIntro{
+  background: rgb(250 250 250 / 25%);
+  box-shadow: 0 0 47px #ffffff3b;
+}
+
+#team h4:nth-of-type(2){
+  color: #b1beff;
+}
+
+
+
+ .section-heading  {
+  font-family: var(--pri-font) ; 
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: rgba(255,255,255,0.88);
+}
+
+#lexiconContainer{
+  background: url('../img/hands_large.jpg');
+  background-size: 100vw auto;
+  background-position: 0vw 0vh;
+}
+
+#musicBanner{
+  height: 100vh;
+  padding: 100px 0;
+  background: url('../img/squint-black-overlay.jpg');
+  background-size: auto 126vh;
+  background-position: 80% 100%;
+  background-attachment: fixed;
+}
+
+#musicBanner p{
+  font-size: 1rem;
+  color: #d7d7d7;
+}
